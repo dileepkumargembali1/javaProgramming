@@ -100,3 +100,89 @@ If it is jump into editor
 
 inside bash only its asked for writing 
 simply press Ctrl+C
+
+
+#################################Branch cocept################3
+
+ Step 1: Create a New Branch Locally
+bash
+Copy
+Edit
+git checkout -b your-branch-name
+👉 Example:
+
+bash
+Copy
+Edit
+git checkout -b feature/login-page
+✅ This creates and switches to a new branch called feature/login-page.
+
+🚀 Step 2: Push the New Branch to GitHub
+bash
+Copy
+Edit
+git push -u origin your-branch-name
+👉 Example:
+
+bash
+Copy
+Edit
+git push -u origin feature/login-page
+✅ Now your branch is available on GitHub too.
+
+🔍 Step 3: Check How Many Branches Exist in the Repo
+🔹 To see local branches:
+bash
+Copy
+Edit
+git branch
+🔹 To see remote branches (on GitHub):
+bash
+Copy
+Edit
+git branch -r
+🔹 To see all branches (local + remote):
+bash
+Copy
+Edit
+git branch -a
+🔄 Step 4: Switch Between Branches
+🔹 To switch to an existing branch:
+bash
+Copy
+Edit
+git checkout branch-name
+👉 Example:
+
+bash
+Copy
+Edit
+git checkout main
+🧠 Optional: Create + Switch in One Line
+bash
+Copy
+Edit
+git switch -c new-branch
+Same as git checkout -b
+
+🧽 Bonus: Delete a Local Branch (if needed)
+bash
+Copy
+Edit
+git branch -d branch-name
+🎯 Recap
+Task	Command Example
+Create and switch to new branch	git checkout -b feature/new-ui
+Push branch to GitHub	git push -u origin feature/new-ui
+List local branches	git branch
+List remote branches	git branch -r
+List all branches	git branch -a
+Switch to a branch	git checkout main
+
+Let me know if you want to:
+
+Merge one branch into another
+
+Delete a branch from GitHub
+
+Set branch protection rules
