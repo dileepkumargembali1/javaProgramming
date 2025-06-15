@@ -1,0 +1,102 @@
+Git commands to add local repo into github repository
+
+You already have:
+
+A project folder on your local machine
+
+A GitHub account
+
+Now you want to push your local code to GitHub
+
+🧭 Step-by-Step Instructions:
+🔹 1. Open Terminal / Git Bash
+Navigate to your local project folder:
+
+bash
+Copy
+Edit
+cd path/to/your/project-folder
+🔹 2. Initialize Git (if not already done)
+bash
+Copy
+Edit
+git init
+💡 This makes your folder a Git repository.
+
+🔹 3. Add all files
+bash
+Copy
+Edit
+git add .
+✅ Stages all files for commit.
+
+🔹 4. Commit the files
+bash
+Copy
+Edit
+git commit -m "Initial commit"
+📝 Saves a snapshot of your current work.
+
+🔹 5. Create a New Repo on GitHub
+Go to https://github.com
+
+Click ➕ New repository
+
+Enter repo name (e.g., my-java-app)
+
+Do NOT check "Initialize with README"
+
+Click Create repository
+
+GitHub will show you a remote URL like:
+
+perl
+Copy
+Edit
+https://github.com/yourusername/my-java-app.git
+🔹 6. Connect Local to GitHub Repo
+bash
+Copy
+Edit
+git remote add origin https://github.com/yourusername/my-java-app.git
+🔹 7. Push Code to GitHub
+bash
+Copy
+Edit
+git branch -M main
+git push -u origin main
+✅ Your code is now live on GitHub!
+
+🔁 Summary of Commands:
+bash
+Copy
+Edit
+cd path/to/folder
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/yourusername/repo-name.git
+git branch -M main
+git push -u origin main
+✅ Example Output on GitHub
+Your project will be visible at:
+https://github.com/yourusername/repo-name
+
+Let me know if:
+
+You get an error
+
+You want to add a .gitignore or README.md
+
+You want to do it using GitHub Desktop or VS Code
+
+
+
+
+################Imp one#################################
+If it is jump into editor 
+1)inster i
+2)save and exist :wq
+
+inside bash only its asked for writing 
+simply press Ctrl+C
